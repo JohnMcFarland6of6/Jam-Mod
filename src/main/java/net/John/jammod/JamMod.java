@@ -1,6 +1,8 @@
 package net.John.jammod;
 
 import com.mojang.logging.LogUtils;
+import net.John.jammod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -32,9 +34,10 @@ public class JamMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-//oop
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+        ModItems.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,7 +54,10 @@ public class JamMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.accept(ModItems.jarofstrawberryjam);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
