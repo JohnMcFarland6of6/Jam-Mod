@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "jammod:block/strawberry_block"
+    }
+  }
+}
