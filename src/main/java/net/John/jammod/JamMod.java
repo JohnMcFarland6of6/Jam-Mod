@@ -1,6 +1,7 @@
 package net.John.jammod;
 
 import com.mojang.logging.LogUtils;
+import net.John.jammod.block.ModBlocks;
 import net.John.jammod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -37,6 +38,7 @@ public class JamMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -54,9 +56,23 @@ public class JamMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
         {
             event.accept(ModItems.jarofstrawberryjam);
+            event.accept(ModItems.jarofapplejam);
+            event.accept(ModItems.jarofgoldenapplejam);
+            event.accept(ModItems.jarofglowberryjam);
+            event.accept(ModItems.jarofchorusfruitjam);
+            event.accept(ModItems.jarofcookiejam);
+            event.accept(ModItems.jarofbreezejam);
+            event.accept(ModItems.jarofwatermelonjam);
+
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+            event.accept(ModBlocks.STRAWBERRY_JAM);
+
         }
     }
 

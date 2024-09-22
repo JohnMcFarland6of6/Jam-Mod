@@ -1,3 +1,12 @@
 {
-  "item.jammod.jarofstrawberryjam": "Jar of Strawberry Jam"
+  "item.jammod.jarofapplejam": "Jar of Apple Jam",
+  "item.jammod.jarofgoldenapplejam": "Jar of Golden Apple Jam",
+  "item.jammod.jarofstrawberryjam": "Jar of Strawberry Jam",
+  "item.jammod.jarofwatermelonjam": "Jar of Watermelon jam",
+  "item.jammod.jarofbreezejam": "Jar of Breeze Jam",
+  "item.jammod.jarofchorusfruitjam": "Jar of Chorus Fruit Jam",
+  "item.jammod.jarofglowberryjam": "Jar of Glow Berry Jam",
+  "item.jammod.jarofcookiejam": "Jar of cookie Jam",
+
+  "block.jammod.strawberry_block": "Strawberry Jam Block"
 }
