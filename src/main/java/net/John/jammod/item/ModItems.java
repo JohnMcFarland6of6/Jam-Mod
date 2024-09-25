@@ -21,6 +21,8 @@ public class ModItems
     public static final RegistryObject<Item> jarofcookiejam = ITEMS.register("jarofcookiejam", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> jarofbreezejam = ITEMS.register("jarofbreezejam", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> jarofwatermelonjam = ITEMS.register("jarofwatermelonjam", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> rawbismuth = ITEMS.register("rawbismuth", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> emptyjar = ITEMS.register("emptyjar", () -> new Item(new Item.Properties()));
 
 
 

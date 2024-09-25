@@ -72,8 +72,18 @@ public class JamMod
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
         {
             event.accept(ModBlocks.STRAWBERRY_JAM);
+            event.accept(ModBlocks.BISMUTH_ORE);
+            event.accept(ModBlocks.CANNER);
 
         }
+
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.accept(ModItems.rawbismuth);
+            event.accept(ModItems.emptyjar);
+        }
+
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

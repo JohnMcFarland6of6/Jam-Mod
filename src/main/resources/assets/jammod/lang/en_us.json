@@ -7,6 +7,13 @@
   "item.jammod.jarofchorusfruitjam": "Jar of Chorus Fruit Jam",
   "item.jammod.jarofglowberryjam": "Jar of Glow Berry Jam",
   "item.jammod.jarofcookiejam": "Jar of cookie Jam",
+  "item.jammod.emptyjar": "Empty Jar",
 
-  "block.jammod.strawberry_block": "Strawberry Jam Block"
+  "item.jammod.rawbismuth": "Raw Bismuth",
+
+  "block.jammod.strawberry_block": "Strawberry Jam Block",
+  "block.jammod.canner": "Canner",
+
+  "block.jammod.bismuth_ore": "Bismuth Ore"
+
 }

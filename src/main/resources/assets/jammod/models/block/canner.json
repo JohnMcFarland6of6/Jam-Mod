@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "jammod:block/cannerbottom",
+    "front": "jammod:block/cannerside",
+    "side": "jammod:block/cannerside"
+  }
+}
